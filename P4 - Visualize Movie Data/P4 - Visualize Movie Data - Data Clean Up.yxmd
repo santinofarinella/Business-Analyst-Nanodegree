@@ -1,0 +1,430 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Tino\Alteryx\movies (3).csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>movies (3).csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="imdb_id" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="popularity" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="budget" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="revenue" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="original_title" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="cast" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="homepage" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="director" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="tagline" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="keywords" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="overview" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="runtime" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="genres" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="production_companies" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="release_date" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="vote_count" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="vote_average" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="release_year" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="budget_adj" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="revenue_adj" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="150" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="id" selected="True" />
+            <Field field="imdb_id" selected="True" />
+            <Field field="popularity" selected="True" />
+            <Field field="budget" selected="True" />
+            <Field field="revenue" selected="True" />
+            <Field field="original_title" selected="True" />
+            <Field field="cast" selected="True" />
+            <Field field="homepage" selected="True" />
+            <Field field="director" selected="True" />
+            <Field field="tagline" selected="True" />
+            <Field field="keywords" selected="True" />
+            <Field field="overview" selected="True" />
+            <Field field="runtime" selected="True" />
+            <Field field="genres" selected="True" />
+            <Field field="production_companies" selected="True" />
+            <Field field="release_date" selected="True" />
+            <Field field="vote_count" selected="True" />
+            <Field field="vote_average" selected="True" />
+            <Field field="release_year" selected="True" />
+            <Field field="budget_adj" selected="True" />
+            <Field field="revenue_adj" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="Int32" />
+            <Field name="imdb_id" size="9" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="String" />
+            <Field name="popularity" size="21" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="budget" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="Int32" />
+            <Field name="revenue" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="Int64" />
+            <Field name="original_title" size="104" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="cast" size="110" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="homepage" size="242" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="director" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="tagline" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="keywords" size="131" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="overview" size="254" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="runtime" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="Int16" />
+            <Field name="genres" size="51" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="production_companies" size="184" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="release_date" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="Date" />
+            <Field name="vote_count" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="Int16" />
+            <Field name="vote_average" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="Double" />
+            <Field name="release_year" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="Int16" />
+            <Field name="budget_adj" size="18" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+            <Field name="revenue_adj" size="18" source="File: C:\Users\Tino\Alteryx\movies (3).csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="582" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF (FINDSTRING([keywords], &quot;novel&quot;) = -1)THEN &quot;True&quot; ELSE &quot;False&quot; ENDIF" field="Based On Novel" size="2147483647" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Based On Novel = IF (FINDSTRING([keywords], "novel") = -1)THEN "True" ELSE "Fals...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="246" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="popularity" selected="True" type="Double" size="8" />
+            <SelectField field="budget_adj" selected="True" type="Float" size="4" />
+            <SelectField field="revenue_adj" selected="True" type="Float" size="4" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="618" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>genres</Field>
+          <NumFields value="1" />
+          <Delimeters value="|" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="618" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>production_companies</Field>
+          <NumFields value="1" />
+          <Delimeters value="|" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="714" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[production_companies] = "Universal Pictures" OR
+[production_companies] = "Paramount Pictures"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[production_companies] = "Universal Pictures" OR
+[production_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="774" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Users\Tino\Desktop\Q3_movies.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Q3_movies.xlsx
+Table=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="978" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Users\Tino\Desktop\Q2_movies.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Q2_movies.xlsx
+Table=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="966" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Users\Tino\Desktop\Q1_movies.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Q1_movies.xlsx
+Table=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="342" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[revenue_adj] &gt; 100000 AND [budget_adj] &gt; 100000</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[revenue_adj] &gt; 100000 AND [budget_adj] &gt; 100000</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="750" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[!IsNull([genres]) AND [genres] != "TV Movie" AND  [genres] != "Foreign"
+]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([genres]) AND [genres] != "TV Movie" AND  [genres] !=...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="498" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Users\Tino\Desktop\Q4_movies.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Q4_movies.xlsx
+Table=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="True" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="True" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="True" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>P3 - Visualize Movie Data - Data Cleanup</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
