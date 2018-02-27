@@ -1,0 +1,487 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.3">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="426" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="do target">False</Value>
+          <Value name="target">Credit-Application-Result</Value>
+          <Value name="target level" />
+          <Value name="use fields">"Duration-of-Credit-Month","Credit-Amount","Instalment-per-cent","Duration-in-Current-address","Most-valuable-available-asset","Age-years","Type-of-apartment"</Value>
+          <Value name="Pearson">True</Value>
+          <Value name="Spearman">False</Value>
+          <Value name="Hoeffding">False</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Association_Analysis.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Tino\AppData\Local\Temp\Engine_2200_6f296980937f49809f724159a5ac4c4b_\Engine_2060_93e1b91959db471f8e6b3b71d9fb1ff1_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings>
+        <Position x="270" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">Credit-Application-Result=True,Account-Balance=True,Duration-of-Credit-Month=True,Payment-Status-of-Previous-Credit=True,Purpose=True,Credit-Amount=True,Value-Savings-Stocks=True,Length-of-current-employment=True,Instalment-per-cent=True,Guarantors=True,Duration-in-Current-address=True,Most-valuable-available-asset=True,Age-years=True,Concurrent-Credits=True,Type-of-apartment=True,No-of-Credits-at-this-Bank=True,Occupation=True,No-of-dependents=True,Telephone=True,Foreign-Worker=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="366" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Credit-Application-Result" action="CountNull" rename="CountNull_Credit-Application-Result" />
+            <SummarizeField field="Account-Balance" action="CountNull" rename="CountNull_Account-Balance" />
+            <SummarizeField field="Duration-of-Credit-Month" action="CountNull" rename="CountNull_Duration-of-Credit-Month" />
+            <SummarizeField field="Payment-Status-of-Previous-Credit" action="CountNull" rename="CountNull_Payment-Status-of-Previous-Credit" />
+            <SummarizeField field="Purpose" action="CountNull" rename="CountNull_Purpose" />
+            <SummarizeField field="Credit-Amount" action="CountNull" rename="CountNull_Credit-Amount" />
+            <SummarizeField field="Value-Savings-Stocks" action="CountNull" rename="CountNull_Value-Savings-Stocks" />
+            <SummarizeField field="Length-of-current-employment" action="CountNull" rename="CountNull_Length-of-current-employment" />
+            <SummarizeField field="Instalment-per-cent" action="CountNull" rename="CountNull_Instalment-per-cent" />
+            <SummarizeField field="Guarantors" action="CountNull" rename="CountNull_Guarantors" />
+            <SummarizeField field="Duration-in-Current-address" action="CountNull" rename="CountNull_Duration-in-Current-address" />
+            <SummarizeField field="Most-valuable-available-asset" action="CountNull" rename="CountNull_Most-valuable-available-asset" />
+            <SummarizeField field="Age-years" action="CountNull" rename="CountNull_Age-years" />
+            <SummarizeField field="Concurrent-Credits" action="CountNull" rename="CountNull_Concurrent-Credits" />
+            <SummarizeField field="Type-of-apartment" action="CountNull" rename="CountNull_Type-of-apartment" />
+            <SummarizeField field="No-of-Credits-at-this-Bank" action="CountNull" rename="CountNull_No-of-Credits-at-this-Bank" />
+            <SummarizeField field="Occupation" action="CountNull" rename="CountNull_Occupation" />
+            <SummarizeField field="No-of-dependents" action="CountNull" rename="CountNull_No-of-dependents" />
+            <SummarizeField field="Telephone" action="CountNull" rename="CountNull_Telephone" />
+            <SummarizeField field="Foreign-Worker" action="CountNull" rename="CountNull_Foreign-Worker" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="642" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Tino\AppData\Local\Temp\Engine_2200_6f296980937f49809f724159a5ac4c4b_\Engine_2060_8ba6f7c578b544aaa9d48971e206e6e8_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="594" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Tino\AppData\Local\Temp\Engine_2200_6f296980937f49809f724159a5ac4c4b_\Engine_2060_55bdb507fd4f41afa6ca4a640e8e8b0c_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Tino\Alteryx\credit-data-training (3).xlsx</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>credit-data-training (3).xlsx</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Credit-Application-Result" size="255" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="V_String" />
+            <Field name="Account-Balance" size="255" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="V_String" />
+            <Field name="Duration-of-Credit-Month" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="Double" />
+            <Field name="Payment-Status-of-Previous-Credit" size="255" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="V_String" />
+            <Field name="Purpose" size="255" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="V_String" />
+            <Field name="Credit-Amount" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="Double" />
+            <Field name="Value-Savings-Stocks" size="255" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="V_String" />
+            <Field name="Length-of-current-employment" size="255" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="V_String" />
+            <Field name="Instalment-per-cent" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="Double" />
+            <Field name="Guarantors" size="255" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="V_String" />
+            <Field name="Duration-in-Current-address" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="Double" />
+            <Field name="Most-valuable-available-asset" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="Double" />
+            <Field name="Age-years" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="Double" />
+            <Field name="Concurrent-Credits" size="255" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="V_String" />
+            <Field name="Type-of-apartment" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="Double" />
+            <Field name="No-of-Credits-at-this-Bank" size="255" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="V_String" />
+            <Field name="Occupation" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="Double" />
+            <Field name="No-of-dependents" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="Double" />
+            <Field name="Telephone" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="Double" />
+            <Field name="Foreign-Worker" source="File: C:\Users\Tino\Alteryx\credit-data-training (3).xlsx" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Occupation" selected="True" type="String" size="19" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="294" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_Credit-Application-Result" selected="True" />
+                <SelectField field="Target_Account-Balance" selected="True" />
+                <SelectField field="Target_Duration-of-Credit-Month" selected="True" />
+                <SelectField field="Target_Payment-Status-of-Previous-Credit" selected="True" />
+                <SelectField field="Target_Purpose" selected="True" />
+                <SelectField field="Target_Credit-Amount" selected="True" />
+                <SelectField field="Target_Value-Savings-Stocks" selected="True" />
+                <SelectField field="Target_Length-of-current-employment" selected="True" />
+                <SelectField field="Target_Instalment-per-cent" selected="True" />
+                <SelectField field="Target_Guarantors" selected="True" />
+                <SelectField field="Target_Duration-in-Current-address" selected="True" />
+                <SelectField field="Target_Most-valuable-available-asset" selected="True" />
+                <SelectField field="Target_Age-years" selected="True" />
+                <SelectField field="Target_Concurrent-Credits" selected="True" />
+                <SelectField field="Target_Type-of-apartment" selected="True" />
+                <SelectField field="Target_No-of-Credits-at-this-Bank" selected="True" />
+                <SelectField field="Target_Occupation" selected="True" />
+                <SelectField field="Target_No-of-dependents" selected="True" />
+                <SelectField field="Target_Telephone" selected="True" />
+                <SelectField field="Target_Foreign-Worker" selected="True" />
+                <SelectField field="Source_Median_Age-years" selected="True" />
+                <SelectField field="Source_Credit-Application-Result" selected="True" rename="Source_Credit-Application-Result" />
+                <SelectField field="Source_Account-Balance" selected="True" rename="Source_Account-Balance" />
+                <SelectField field="Source_Duration-of-Credit-Month" selected="True" rename="Source_Duration-of-Credit-Month" />
+                <SelectField field="Source_Payment-Status-of-Previous-Credit" selected="True" rename="Source_Payment-Status-of-Previous-Credit" />
+                <SelectField field="Source_Purpose" selected="True" rename="Source_Purpose" />
+                <SelectField field="Source_Credit-Amount" selected="True" rename="Source_Credit-Amount" />
+                <SelectField field="Source_Value-Savings-Stocks" selected="True" rename="Source_Value-Savings-Stocks" />
+                <SelectField field="Source_Length-of-current-employment" selected="True" rename="Source_Length-of-current-employment" />
+                <SelectField field="Source_Instalment-per-cent" selected="True" rename="Source_Instalment-per-cent" />
+                <SelectField field="Source_Guarantors" selected="True" rename="Source_Guarantors" />
+                <SelectField field="Source_Duration-in-Current-address" selected="True" rename="Source_Duration-in-Current-address" />
+                <SelectField field="Source_Most-valuable-available-asset" selected="True" rename="Source_Most-valuable-available-asset" />
+                <SelectField field="Source_Age-years" selected="True" rename="Source_Age-years" />
+                <SelectField field="Source_Concurrent-Credits" selected="True" rename="Source_Concurrent-Credits" />
+                <SelectField field="Source_Type-of-apartment" selected="True" rename="Source_Type-of-apartment" />
+                <SelectField field="Source_No-of-Credits-at-this-Bank" selected="True" rename="Source_No-of-Credits-at-this-Bank" />
+                <SelectField field="Source_Occupation" selected="True" rename="Source_Occupation" />
+                <SelectField field="Source_No-of-dependents" selected="True" rename="Source_No-of-dependents" />
+                <SelectField field="Source_Telephone" selected="True" rename="Source_Telephone" />
+                <SelectField field="Source_Foreign-Worker" selected="True" rename="Source_Foreign-Worker" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="174" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Age-years" action="Median" rename="Median_Age-years" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF IsNull([Age-years]) THEN [Median_Age-years] ELSE [Age-years] ENDIF" field="Age-years" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Age-years = IF IsNull([Age-years]) THEN [Median_Age-years] ELSE [Age-years] ENDI...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="678" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Users\Tino\Desktop\credit-data-training_cleanup.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>credit-data-training_cleanup.xlsx
+Table=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Credit-Application-Result" selected="True" />
+            <SelectField field="Account-Balance" selected="True" />
+            <SelectField field="Duration-of-Credit-Month" selected="True" />
+            <SelectField field="Payment-Status-of-Previous-Credit" selected="True" />
+            <SelectField field="Purpose" selected="True" />
+            <SelectField field="Credit-Amount" selected="True" />
+            <SelectField field="Value-Savings-Stocks" selected="True" />
+            <SelectField field="Length-of-current-employment" selected="True" />
+            <SelectField field="Instalment-per-cent" selected="True" />
+            <SelectField field="Most-valuable-available-asset" selected="True" />
+            <SelectField field="Age-years" selected="True" />
+            <SelectField field="Type-of-apartment" selected="True" />
+            <SelectField field="No-of-Credits-at-this-Bank" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Interactive" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="2" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="5" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="16" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>P4 - Predicting Default Risk - Data Exploration</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
