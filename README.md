@@ -1,2 +1,3 @@
 # Business-Analyst-Nanodegree
-Learn to analyze data, create dashboards, and build predictive models.
+
+This repository contains projects for Udacity's Business Analyst Nanodegree.
